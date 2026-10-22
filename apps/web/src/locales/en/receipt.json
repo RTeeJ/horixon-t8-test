@@ -1,0 +1,14 @@
+{
+  "orderNumber": "Order",
+  "staff": "Staff: {{name}}",
+  "subtotal": "Subtotal",
+  "discount": "Discount: {{name}}",
+  "grandTotal": "Grand Total (incl. VAT)",
+  "beforeVat": "Before VAT",
+  "vat": "VAT {{rate}}%",
+  "status": { "PENDING_PAYMENT": "Pending payment", "PAID": "Paid", "VOIDED": "Voided" },
+  "payment": { "cash": "Payment: Cash", "qr": "Payment: QR", "none": "Payment: No payment required", "received": "Received {{amount}}", "change": "Change {{amount}}" },
+  "voidReason": "{{reason}} — {{note}}",
+  "takePayment": "Take payment",
+  "loading": "Loading receipt…"
+}

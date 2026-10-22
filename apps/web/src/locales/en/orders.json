@@ -1,0 +1,45 @@
+{
+  "heading": "Orders",
+  "filters": {
+    "date": "Date",
+    "status": "Status",
+    "method": "Payment method",
+    "sort": "Sort",
+    "all": "All",
+    "today": "Today",
+    "yesterday": "Yesterday"
+  },
+  "method": {
+    "QR": "QR",
+    "CASH": "Cash",
+    "NONE": "No payment"
+  },
+  "sort": {
+    "desc": "Newest first",
+    "asc": "Oldest first"
+  },
+  "columns": {
+    "order": "Order",
+    "time": "Time",
+    "staff": "Staff",
+    "total": "Total",
+    "status": "Status",
+    "method": "Payment",
+    "actions": "Actions"
+  },
+  "pay": "Pay",
+  "receipt": "Receipt",
+  "empty": "No orders match these filters.",
+  "loading": "Loading orders…",
+  "void": {
+    "open": "Void",
+    "title": "Void order {{number}}",
+    "reason": "Reason",
+    "choose": "Choose a reason",
+    "noteOptional": "Note (optional)",
+    "noteRequired": "Note (required)",
+    "cancel": "Cancel",
+    "confirm": "Void order",
+    "voiding": "Voiding…"
+  }
+}

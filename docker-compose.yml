@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      # 5434 on the host avoids clashing with a local Postgres on 5432/5433.
+      - "${POSTGRES_HOST_PORT:-5434}:5432"
+    environment:
+      POSTGRES_USER: coffee
+      POSTGRES_PASSWORD: coffee
+      POSTGRES_DB: coffee
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U coffee -d coffee"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    environment:
+      APP_ENV: dev
+      DATABASE_URL: postgres://coffee:coffee@postgres:5432/coffee
+      JWT_SECRET: dev-only-secret-change-me
+      WEB_ORIGIN: http://localhost:5173
+      # Adds demo orders on start when the database has none (dev only, requirements §10.3).
+      SEED_DEMO: "true"
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        VITE_API_URL: http://localhost:3000
+        VITE_DEMO_LOGIN: "true"
+    depends_on:
+      - api
+    ports:
+      - "5173:5173"
+
+volumes:
+  pgdata:

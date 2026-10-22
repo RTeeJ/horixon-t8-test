@@ -1,0 +1,20 @@
+{
+  "heading": "Payment",
+  "orderNumber": "Order",
+  "total": "Total",
+  "method": "Payment method",
+  "cash": "Cash",
+  "qr": "QR",
+  "cashReceived": "Cash received",
+  "change": "Change {{amount}}",
+  "confirmCash": "Confirm cash",
+  "confirming": "Confirming…",
+  "payLater": "Pay later",
+  "loading": "Loading order…",
+  "showQr": "Show QR code",
+  "creatingQr": "Creating QR…",
+  "scanToPay": "Scan to pay",
+  "expiresIn": "Expires in",
+  "simulatePaid": "Simulate customer paid",
+  "newQr": "New QR code"
+}

@@ -1,0 +1,14 @@
+{
+  "orderNumber": "ออเดอร์",
+  "staff": "พนักงาน: {{name}}",
+  "subtotal": "รวมเป็นเงิน",
+  "discount": "ส่วนลด: {{name}}",
+  "grandTotal": "ยอดรวมทั้งสิ้น (รวมภาษีมูลค่าเพิ่ม)",
+  "beforeVat": "ราคาก่อนภาษีมูลค่าเพิ่ม",
+  "vat": "ภาษีมูลค่าเพิ่ม {{rate}}%",
+  "status": { "PENDING_PAYMENT": "รอชำระเงิน", "PAID": "ชำระแล้ว", "VOIDED": "ยกเลิกแล้ว" },
+  "payment": { "cash": "ชำระด้วย: เงินสด", "qr": "ชำระด้วย: QR", "none": "ชำระด้วย: ไม่ต้องชำระเงิน", "received": "รับเงิน {{amount}}", "change": "เงินทอน {{amount}}" },
+  "voidReason": "{{reason}} — {{note}}",
+  "takePayment": "รับชำระเงิน",
+  "loading": "กำลังโหลดใบเสร็จ…"
+}

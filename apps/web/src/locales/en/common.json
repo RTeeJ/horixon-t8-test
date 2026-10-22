@@ -1,0 +1,30 @@
+{
+  "app": {
+    "title": "Coffee POS"
+  },
+  "header": {
+    "signedInAs": "Signed in as {{name}}",
+    "language": "Language"
+  },
+  "pos": {
+    "heading": "New order"
+  },
+  "receipt": {
+    "heading": "Receipt"
+  },
+  "nav": {
+    "label": "Main",
+    "newOrder": "New order",
+    "orders": "Orders"
+  },
+  "env": {
+    "dev": "DEV",
+    "prod": "PROD"
+  },
+  "menu": {
+    "heading": "Drinks"
+  },
+  "login": {
+    "tagline": "Every cup made just right"
+  }
+}

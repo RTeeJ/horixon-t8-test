@@ -1,0 +1,17 @@
+{
+  "loading": "กำลังโหลดเมนู…",
+  "size": "ขนาด",
+  "addOns": "ส่วนเสริม",
+  "limitAddOns": "เพิ่มส่วนเสริมได้สูงสุด {{max}} ชิ้นต่อแก้ว",
+  "limitSameAddOn": "ส่วนเสริมชนิดเดียวกันได้สูงสุด {{max}} ชิ้น",
+  "category": { "EXTRA": "เพิ่มพิเศษ", "SYRUP": "ไซรัป", "TOPPING": "ท็อปปิ้ง" },
+  "increase": "เพิ่ม {{name}}",
+  "decrease": "ลด {{name}}",
+  "count": "จำนวน {{name}}",
+  "incomplete": "กรุณาเลือกขนาด",
+  "addToCart": "เพิ่มลงตะกร้า",
+  "close": "ปิด",
+  "from": "เริ่มต้น {{price}}",
+  "pickOne": "ต้องเลือก 1",
+  "optional": "ไม่บังคับ · {{count}}/{{max}}"
+}

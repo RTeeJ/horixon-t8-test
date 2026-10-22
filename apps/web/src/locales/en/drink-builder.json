@@ -1,0 +1,17 @@
+{
+  "loading": "Loading menu…",
+  "size": "Size",
+  "addOns": "Add-ons",
+  "limitAddOns": "Up to {{max}} add-ons per drink.",
+  "limitSameAddOn": "Up to {{max}} of the same add-on.",
+  "category": { "EXTRA": "Extra", "SYRUP": "Syrup", "TOPPING": "Topping" },
+  "increase": "Increase {{name}}",
+  "decrease": "Decrease {{name}}",
+  "count": "{{name}} count",
+  "incomplete": "Choose a size.",
+  "addToCart": "Add to cart",
+  "close": "Close",
+  "from": "from {{price}}",
+  "pickOne": "Pick 1",
+  "optional": "Optional · {{count}}/{{max}}"
+}

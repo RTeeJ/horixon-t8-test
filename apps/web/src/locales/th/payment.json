@@ -1,0 +1,20 @@
+{
+  "heading": "ชำระเงิน",
+  "orderNumber": "ออเดอร์",
+  "total": "ยอดรวม",
+  "method": "วิธีชำระเงิน",
+  "cash": "เงินสด",
+  "qr": "QR",
+  "cashReceived": "รับเงินมา",
+  "change": "เงินทอน {{amount}}",
+  "confirmCash": "ยืนยันรับเงินสด",
+  "confirming": "กำลังยืนยัน…",
+  "payLater": "จ่ายทีหลัง",
+  "loading": "กำลังโหลดออเดอร์…",
+  "showQr": "แสดง QR",
+  "creatingQr": "กำลังสร้าง QR…",
+  "scanToPay": "สแกนเพื่อชำระเงิน",
+  "expiresIn": "หมดอายุใน",
+  "simulatePaid": "จำลองลูกค้าจ่ายแล้ว",
+  "newQr": "สร้าง QR ใหม่"
+}

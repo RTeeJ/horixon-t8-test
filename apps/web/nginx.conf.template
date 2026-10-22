@@ -1,0 +1,18 @@
+# A template: the nginx image substitutes ${API_ORIGIN} from the environment at start
+# (only variables that are set, so nginx's own $uri is left alone).
+server {
+  listen 5173;
+  root /usr/share/nginx/html;
+  index index.html;
+  server_tokens off;
+
+  # Everything the app loads is its own (fonts, images, the QR is an inline SVG); it only calls the API.
+  add_header Content-Security-Policy "default-src 'self'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' ${API_ORIGIN}; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" always;
+  add_header X-Content-Type-Options "nosniff" always;
+  add_header X-Frame-Options "DENY" always;
+  add_header Referrer-Policy "no-referrer" always;
+
+  location / {
+    try_files $uri /index.html;
+  }
+}

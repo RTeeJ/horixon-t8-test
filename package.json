@@ -1,0 +1,18 @@
+{
+  "name": "coffee-pos",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "dev": "npm run build -w @coffee/domain && concurrently -n api,web -c blue,green \"npm run start:dev -w @coffee/api\" \"npm run dev -w @coffee/web\"",
+    "migrate": "npm run migration:run -w @coffee/api",
+    "seed:demo": "npm run seed:demo -w @coffee/api"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
